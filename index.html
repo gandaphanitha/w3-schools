@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./w3 schools.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/topnav/main.css?v=1.0.31">
+    <link rel="stylesheet" href="/lib/w3schools32.css?v=1.0.1">
+</head>
+<body>
+    <div class="stick">
+        <nav class="heading">
+            <img src="https://cufinder.io/_next/image?url=https%3A%2F%2Fcufinder.io%2Fimages%2Fmarketing-logos%2Fw3schools.com.png&w=1200&q=75" alt="">
+            <div class="certificate">               
+                <div class="tutorial">
+                    <p>Tutorial</p>
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+
+                </div>
+                <div class="tutorial">
+                    <p>Exercises</p>
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+
+                </div>
+                <div class="tutorial">
+                    <p>Certificates</p>
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+
+                </div>
+                <div class="tutorial">
+                    <p>Services</p>
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Search" style="border: none; font-size: 14px; outline: none;"class="bbb">
+                    
+                    <!-- <i class="fa fa-search" style="height: 25px;width: 25px;"></i> -->
+                    
+                    <div>
+                        <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                </div>
+                <div class="mode">
+                    <a href="#"><img src="https://i.ibb.co/yg5tCPw/contrast-circle-symbol.png" alt="" style="width: 10%; margin-left: 10%;"class="symble"></a>
+                </div>
+                
+            </div>
+            <div class="right">            
+                <div class="contrast">
+                    <div class="left">
+                        <svg width="32" height="1.5em" viewBox="0 0 32 32" fill="none" style="color: rgb(139, 72, 222);"  xmlns="http://www.w3.org/2000/svg"><path d="M19.3685 14.6642C18.3796 14.6642 17.4129 14.9574 16.5907 15.5068C15.7684 16.0562 15.1276 16.8371 14.7491 17.7508C14.3707 18.6644 14.2717 19.6697 14.4646 20.6396C14.6575 21.6095 15.1337 22.5005 15.833 23.1997C16.5323 23.899 17.4232 24.3752 18.3931 24.5681C19.363 24.761 20.3683 24.662 21.2819 24.2836C22.1956 23.9051 22.9765 23.2643 23.5259 22.442C24.0753 21.6198 24.3685 20.6531 24.3685 19.6642M20.3685 10.7192C18.5146 10.5112 16.6418 10.8845 15.0093 11.7874C13.3768 12.6903 12.0652 14.0782 11.256 15.7591C10.4467 17.44 10.1798 19.3308 10.4922 21.17C10.8045 23.0093 11.6807 24.706 12.9996 26.0255C14.3184 27.3449 16.0146 28.222 17.8537 28.5353C19.6928 28.8486 21.5838 28.5826 23.2651 27.7742C24.9464 26.9658 26.3349 25.6549 27.2386 24.0229C28.1424 22.3908 28.5166 20.5182 28.3095 18.6642M22.3685 16.6642V13.6642L25.3685 10.6642V13.6642H28.3685L25.3685 16.6642H22.3685ZM22.3685 16.6642L19.3685 19.6642M18.3685 19.6642C18.3685 19.9294 18.4739 20.1838 18.6614 20.3713C18.849 20.5588 19.1033 20.6642 19.3685 20.6642C19.6337 20.6642 19.8881 20.5588 20.0756 20.3713C20.2632 20.1838 20.3685 19.9294 20.3685 19.6642C20.3685 19.399 20.2632 19.1446 20.0756 18.9571C19.8881 18.7695 19.6337 18.6642 19.3685 18.6642C19.1033 18.6642 18.849 18.7695 18.6614 18.9571C18.4739 19.1446 18.3685 19.399 18.3685 19.6642Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.09998 3.16406V10.1641M2.59998 6.66406H9.59998" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <a href="">SetGoal</a>
+                    </div>
+                    <div class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="color: rgb(139, 72, 222);" height="1em" viewBox="0 0 640 512" aria-hidden="true">
+                            <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" fill="currentColor"></path>
+                        </svg>
+                        <a href="">Spaces</a>
+                    </div>
+                    <div class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="color: rgb(139, 72, 222);" height="1em" viewBox="0 0 576 512" aria-hidden="true">
+                            <path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z" fill="currentColor"></path>
+                        </svg>
+                        <a href="">GetCertified</a>
+                    </div> 
+                    <div class="login">
+                        <a href="" class="btn1">Signup</a>
+                        <a href="" class="btn2">Login</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+                <!-- =======================navbar1 end here=========== -->
+        <!-- =======================navbar2 start here=========== -->
+        <div class="home">
+            <a href="#"class="bootstrap">HTML</a>
+            <a href="#"class="bootstrap">CSS</a>
+            <a href="#"class="bootstrap">SQL</a>
+            <a href="#"class="bootstrap">PYTHON</a>
+            <a href="#"class="bootstrap">PHP</a>
+            <a href="#"class="bootstrap" >HOW TO</a>
+            <a href="#"class="bootstrap">W3.CSS</a>
+            <a href="#"class="bootstrap">C</a>
+            <a href="#"class="bootstrap">C++</a>  
+            <a href="#"class="bootstrap">C#</a>
+            <a href="#"class="bootstrap">BOOTSTRAP</a>
+            <a href="#" class="bootstrap">REACT</a>
+            <a href="#"class="bootstrap" >REACT</a>
+            <a href="#"class="bootstrap">MYSQL</a>
+            <a href="#"class="bootstrap">JQUERY</a>
+            <a href="#"class="bootstrap">EXCEL</a>
+            <a href="#"class="bootstrap">XML</a>
+            <a href="#"class="bootstrap">DJANGO</a>
+            <a href="#"class="bootstrap">NUMPY</a>
+            <a href="#"class="bootstrap">PANDAS</a>
+            <a href="#"class="bootstrap">NODEJS</a>
+            <a href="#"class="bootstrap">R</a>
+
+         </div>
+        
+    </div>
+<!-- =======================navbar end here=========== -->
+<!-- =======================learn to code start here=========== -->
+    <div class="black">
+        <div class="learn">
+            <div>
+                <h1 class="learntocode">Learn to Code</h1>
+                <h3 class="codeh3"> 
+                    <i class="fa fa-logo w3-hide" style="color:#FFC0C7!important;margin-right:20px;z-index:1;font-size:36px!important;vertical-align:bottom"></i>
+                    With the world's largest web developer site.
+                </h3>
+                <div class="searchbar">
+                    <input type="text" placeholder="search our tutorial,e.g.HTML" style="border: none;outline: none;width: 80%;margin-left: 1%;border-radius: 25px;">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <h4 class="not">
+                    <a href="#" class="ga-fp">Not Sure Where To Begin?</a>
+                </h4>
+                <img src="https://i.ibb.co/T8zWtjL/lynx-in-space.png" alt="" class="space">
+            </div>   
+        </div>
+        <!-- =======================learn to code end here=========== -->
+        <!-- ==============html part start here=============== -->
+        <div class="htmlpart">
+            <div style="text-align: center;">
+                <h1>HTML</h1>
+                <p>The language for building web pages</p>
+                <div class="btn4">
+                    <button>Learn HTML</button>
+                </div>
+                <div class="btn5">
+                    <button>Video Tutorials</button>
+                </div>
+                <div class="btn6">
+                    <button>HTML References</button>
+                </div>
+                <div class="btn7">
+                    <button>Get Certified</button>
+                </div>
+            </div>
+            <div class="container1">
+                <h2 class="html_ex">HTML Example:</h2>
+                <div class="inside_box">
+                    <span style="color:mediumblue">&lt;</span>
+                    <span  style="color:brown">
+                        !DOCTYPE
+                        <span style="color:red">html</span>
+                        <span  style="color:mediumblue">&gt;</span>
+                        <span  style="color:mediumblue"></span>
+                    </span>
+                    <br>
+                        <span style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        html
+                        <span  style="color:mediumblue">&gt;</span>
+                    </span>
+                    <br>
+                     <span  style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        head
+                        <span  style="color:mediumblue">&gt;</span>   
+                    </span>
+                    <br>
+                    <span style="color:brown">
+                        <span style="color:mediumblue"> &lt; </span>
+                        title
+                        <span style="color:mediumblue">&gt;</span>
+                    </span>
+                    HTML Tutorial
+                    <span  style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        /title
+                        <span  style="color:mediumblue">&gt;</span>
+                        
+                    </span>
+                    <br>
+                    <span  style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        /head
+                        <span  style="color:mediumblue">&gt;</span> 
+                    </span>
+                    <br>
+                    <span style="color:brown">
+                        <span style="color:mediumblue">&lt;</span>
+                        body
+                        <span  style="color:mediumblue">&gt;</span>  
+                    </span>
+                    <br><br>
+                    <span  style="color:brown">
+                        <span  style="color:mediumblue"> &lt; </span>
+                        h1
+                        <span  style="color:mediumblue">&gt;</span>    
+                    </span>
+                    This is heading
+                    <span style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        /h1
+                        <span  style="color:mediumblue">&gt;</span> 
+                    </span>
+                    <br>
+                    <span  style="color:brown">
+                        <span  style="color:mediumblue"> &lt; </span>
+                        p
+                        <span  style="color:mediumblue">&gt;</span> 
+                    </span>
+                    This is Peregraph
+                    <span  style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        /p
+                        <span  style="color:mediumblue">&gt;</span> 
+                    </span>
+                    <br><br>
+                    <span style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        /body
+                        <span  style="color:mediumblue">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:brown">
+                        <span style="color:mediumblue">&lt;</span>
+                        html
+                        <span style="color:mediumblue">&gt;</span>
+                    </span>
+                    <br>
+                </div>
+                <button class="php1_button" id="html_bottun">Try it Yourself</button>
+            </div>
+        </div>
+        <!-- =================html part end here============== -->
+        <!-- ======css start here ====================== -->
+        <div class="csspart">
+            <div style="text-align: center;">
+                <h1>CSS</h1>
+                <p>The language for building web pages</p>
+                <div class="btn4">
+                    <button>Learn CSS</button>
+                </div>
+                <div class="btn6">
+                    <button>CSS References</button>
+                </div>
+                <div class="btn7">
+                    <button>Get Certified</button>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="boxcss1">
+                    <h2 class="html_ex">CSS Example:</h2>
+                    <div class="inside_box">
+                        <span style="color:brown">
+                          body 
+                         <span style="color: black;">{</span>    
+                      <span style="color:red">
+                        <br>
+                        <br>
+                       &nbsp;background-color</span>
+                       <span style="color:black">;</span>    
+                     <span style="color:mediumblue">lightblue</span>
+                    <span style="color:black">;</span>
+                     <br>
+                    <span style="color: black;">}</span>
+                    </span>
+                        </span>
+                        <br>
+                        <br>
+                     <span style="color:brown">
+                     h1
+                    <span style="color: black;">{</span>    
+                     <span style="color:red">
+                      <br>
+                      &nbsp;color</span>
+                      <span style="color:black">;</span>  
+                     <span style="color:mediumblue">white</span>
+                     <span style="color:black">;</span>
+                    <br>
+                    <span style="color:brown">
+                      &nbsp;text-algin</span>
+                    <span style="color:black">;</span>  
+                    <span style="color:mediumblue">center</span>
+                    <span  style="color:black">;</span>
+                    <br>
+                    <br>
+                    <span  style="color:brown">
+                         p
+                    <span style="color: black;">{</span>     
+                     <span style="color:red">
+                     <br>
+                     &nbsp;font-family</span>
+                    <span  style="color:black">;</span>  
+                    <span  style="color:mediumblue">verdana</span>
+                    <span style="color:black">;</span>
+                     <br>
+                    <span style="color: black;">}</span>
+                </div>
+                </div>
+            <div><button class="php1_button" id="html_bottun">Try it Yourself</button> </div> 
+            </div>
+        </div>
+        <!-- ======================css part end here ============== -->
+        <div class="javapart">
+            <div style="text-align: center;">
+                <h1>JavaScript</h1>
+                <p>The language for building web pages</p>
+                <div class="btn4">
+                    <button>Learn JavaScript</button>
+                </div>
+                <div class="btn8">
+                    <button>JavaScript References</button>
+                </div>
+                <div class="btn7">
+                    <button>Get Certified</button>
+                </div>
+            </div>
+            <div class="container1" >
+                <h2 class="html_ex">JAVASCRIPT Example:</h2>
+                <div class="inside_box">
+                    <span style="color:mediumblue">&lt;</span>
+                    <span  style="color:brown">
+                        button
+                        <span style="color:red">onclick</span><span style="color:blue;">="myFunction"()</span>
+                        <span  style="color:mediumblue">&gt;</span></span><span style="color:black;font-size: 12px;">Click Me!</span>
+                        <span  style="color:mediumblue">&lt;/</span><span style="color:brown">button</span>
+                        <span  style="color:mediumblue">&gt;</span>
+                    </span>
+                    <br><br>
+                        <span style="color:brown">
+                        <span  style="color:mediumblue">&lt;</span>
+                        script
+                        <span  style="color:mediumblue">&gt;</span><br>
+                        <span style="color:blue">function</span><span style="color:black">myFunction() {</span>
+                        <span class="jsnumbercolor" style="color:red"></span>
+                      
+                    </span><br>&nbsp;
+                    
+                    &nbsp;<span class="jskeywordcolor" style="color:mediumblue">let<span class="jsnumbercolor" style="color:red">
+                    </span></span><span class="jsnumbercolor" style="color:red"> "x=document."
+                        <span class="jspropertycolor" style="color:black">getElementById</span>
+                    "("<span class="jsstringcolor" style="color:brown">"demo"</span> ");"
+                    </span>
+                    <br>
+                     <span  style="color:brown">
+                        <span  style="color:mediumblue"></span>
+                        x.
+                        <span  style="color:mediumblue">style.</span>
+                        <span class="jspropertycolor" style="color:black">fontSize</span>"="  
+                        <span class="jspropertycolor" style="color:black">fontSize</span>";"
+                        <br>
+                        <span class="jsnumbercolor" style="color:red"></span>"&nbsp;x."
+                        <span class="jspropertycolor" style="color:black">style</span>"."
+                        <span class="jspropertycolor" style="color:black">color</span>"="
+                        <span class="jsstringcolor" style="color:brown">"red"</span>";"
+                        <br>
+                        "}"
+                        <br>
+                    </span>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script
+                    <span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+                <button class="php1_button" id="html_bottun">Try it Yourself</button>
+            </div>
+        </div>
+        <!-- ==========================javascript end here================ -->
+        <!-- ====================python sytrt strt here=========== -->
+        <div class="pythonpart">
+            <div style="text-align: center;">
+                <h1>PYTHON</h1>
+                <p>The language for building web pages</p>
+                <div class="btn4">
+                    <button>Learn Python</button>
+                </div>
+                <div class="btn6">
+                    <button>Python References</button>
+                </div>
+                <div class="btn7">
+                    <button>Get Certified</button>
+                </div>
+            </div>
+            <div class="container1">
+                <h2 class="html_ex">Python Example:</h2>
+                <div class="inside_box">
+                    <span style="color:mediumblue">if</span>
+                    <span  style="color:brown">
+                        5
+                    <span class="jspropertycolor" style="color:black">
+                       > 
+                    </span>
+                    <span  style="color:brown">
+                        2 :
+                        <br>   
+                 <span class="jspropertycolor" style="color:black">print</span>
+                (<span style="color:red">"Five is greater than two!"</span>)
+                </div>
+                <button class="php1_button" id="html_bottun">Try it Yourself</button>
+            </div>
+        </div>
+        <!-- ===============python end here ================== -->
+        <!-- =================sql part strt hrre============= -->
+        <div class="sqlpart">
+            <div style="text-align: center;">
+                <h1>SQL</h1>
+                <p>The language for building web pages</p>
+                <div class="btn4">
+                    <button>Learn SQL</button>
+                </div>
+                <div class="btn6">
+                    <button>SQL References</button>
+                </div>
+                <div class="btn7">
+                    <button>Get Certified</button>
+                </div>
+            </div>
+            <div class="container1">
+                <h2 class="html_ex">SQL Example:</h2>
+                <div class="inside_box">
+                    <span style="color:mediumblue">SELECT * FROM</span>
+                    <span class="jspropertycolor" style="color:black">Customers </span>
+                    <br>
+                    <span style="color:mediumblue">WHERE</span>
+                    <span class="jspropertycolor" style="color:black">Country=</span>
+                    <span  style="color:brown">'Mexico'</span>;
+                </div>
+                <button class="php1_button" id="html_bottun">Try it Yourself</button>
+            </div>    
+        </div>
+    <!-- =====================sql end here ============== -->
+        <div>
+            <div class="box">
+                <div class="parent">
+                    <div class="one box1">
+                        <div style="margin-top: 40px;">
+                            <h2 style="font-size:45px;font-weight:700">PHP</h2>
+                            <h5 class="w3-text-dark-grey">A web server programming language</h5>
+                            <div class="video1">
+                                <a href="#" class="style" style="margin-bottom:2px;">Learn PHP</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one box2">
+                        <div style="margin-top: 40px;">
+                            <h2 style="font-size:45px;font-weight:700">JQuery</h2>
+                            <h5 class="w3-text-dark-grey">A JS library for developing web pages</h5>
+                            <div class="video1">
+                                <a href="#" class="style" style="margin-bottom:2px;">Learn Jquery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one box3">
+                        <div style="margin-top: 40px;">
+                            <h2 style="font-size:45px;font-weight:700">JAVA</h2>
+                            <h5 class="w3-text-dark-grey">A programming language</h5>
+                            <div class="video1">
+                                <a href="#" class="style" style="margin-bottom:2px;">Learn Java</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="one box4">  
+                        <div style="margin-top: 40px;">
+                            <h2 style="font-size:45px;font-weight:700">C++</h2>
+                            <h5 class="w3-text-dark-grey">A programming language</h5>
+                            <div class="video1">
+                                <a href="#" class="style" style="margin-bottom:2px;">Learn C++</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one box5">
+                        <div style="margin-top: 40px;">
+                            <h2 style="font-size:45px;font-weight:700">W3.CSS</h2>
+                            <h5 class="w3-text-dark-grey">A CSS framework for faster and better responsive web pages</h5>
+                            <div class="video1">
+                                <a href="#" class="style" style="margin-bottom:2px;">Learn W3.CSS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one box6">
+                        <div style="margin-top: 40px;">
+                            <h2 style="font-size:45px;font-weight:700">Bootstrap</h2>
+                            <h5 class="w3-text-dark-grey">A CSS framework for designing better web pages</h5>
+                            <div class="video1">
+                                <a href="#" class="style" style="margin-bottom:2px;">Learn Bootstrap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Ganda">
+                    <div class="item child1 ph">C</div>
+                    <div class="item child2 ph">C#</div>
+                    <div class="item child3 ph">R</div>
+                    <div class="item child4 ph">Kotlin</div>
+                    <div class="item child5 ph">Node.js</div>
+                    <div class="item child6 ph">React</div>
+                    <div class="item child7 ph">JSON</div>
+                    <div class="item child3 ph">vue</div>
+                    <div class="item child4 ph">MySQL</div>
+                    <div class="item child5 ph">XML</div>
+                    <div class="item child6 ph">Sass</div>
+                    <div class="item child7 ph">ICONS</div>
+                    <div class="item child3 ph">RWD</div>
+                    <div class="item child4 ph">Graphics</div>
+                    <div class="item child5 ph">SVG</div>
+                    <div class="item child6 ph">Canvas</div>
+                    <div class="item child7 ph">Raspberry Pi</div>
+                    <div class="item child3 ph">Cyber Security</div>
+                    <div class="item child4 ph">Colors</div>
+                    <div class="item child5 ph">Git</div>
+                    <div class="item child6 ph">Matplotlb</div>
+                    <div class="item child7 ph">Numpy</div>
+                    <div class="item child3 ph">Pandas</div>
+                    <div class="item child4 ph">Snipy</div>
+                    <div class="item child5 ph">ASP</div>
+                    <div class="item child6 ph">Angulars</div>
+                    <div class="item child7 ph">AppML</div>
+                    <div class="item child3 ph">Go</div>
+                    <div class="item child4 ph">Typescript</div>
+                    <div class="item child5 ph">Django</div>
+                    <div class="item child6 ph">mangoDB</div>
+                    <div class="item child7 ph">Statistics</div>
+                    <div class="item child3 ph">datascience</div>
+                    <div class="item child4 ph">Typing Speed</div>
+                    <div class="item child5 ph">How To</div>
+                    <div class="item child6 ph">Code Game</div>
+                    <div class="item child7 ph">Spaces</div>
+                    <div class="item child3 ph">PostgreSQL</div>
+                    <div class="item child39 ph">EXCEL</div>
+                    <div class="item child40 ph">Item 40</div>
+                    <div class="item child41 ph">DSA-Data Structure</div>
+                    <div class="item child42 ph">Artificial Intelligence</div>
+
+                </div>
+                
+                <!-- ==============code editor start here========= -->
+                <div class="code">
+                    <div class="editor" style="text-align: center; margin-left: 100px;">
+                       <div class="with">
+                           <h1 style="font-size:65px;font-weight:700;">Code Editor</h1>
+                           <h4>With our online code editor, you can edit code and view the result in your browser</h4>
+                       </div>
+                       <div class="container" >
+                           <div class="bigger">                            
+                               <div class="load">
+                                   <div class="round"></div>
+                                   <div class="round1"></div>
+                                   <div class="round2"></div>
+                               </div>
+                               <div style="text-align: center; width: 50vw; ">
+                                   <input type="text"placeholder="www.w3schools.com/tryit/" class="editor">
+                               </div>
+                           </div>
+                           <div class="bomb">
+                               <button  class="rrrr">Frontend</button>
+                               <button style="color:black" class="qqqq" >Backend</button>
+                           </div>
+                           <img src="https://www.w3schools.com/codeeditor.gif" alt="" class="gif">
+                           
+                        </div><br>
+                        <div class="frontend">
+                            <a href="#" class="frontend1">Try Frontend Editor (HTML/CSS/JS)</a>
+                            <a href="#" class="frontend3">Try BackEnd (Python/PHP/Java/C...)</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- =============code editor end here================ -->
+                <div class="center">
+                    <div class="center1">
+                        <h1 style="font-size:65px;font-weight:700; color: white;">W3Schools Spaces</h1>
+                        <h3 style="margin-top:35px;">If you want to create your own website, check out <a href="#" class="green" style="color: #FFC0C7;">W3Schools Spaces</a>.</h3>
+                        <h3 style="margin-top:35px;">It is free to use, and does not require any setup:</h3>
+                        <img src="https://www.w3schools.com/spaces/dynamicspaces.gif" alt="" style="text-align: center;">
+                        <img src="https://www.w3schools.com/how-spaces-works3.png" alt="" style="margin-top: 10%;">
+                        <div>                            
+                            <a href="#" class="more">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===================My Learning part start here ==================== -->
+        <div class="good">
+           <div class="job">
+                <div class="my" style="margin-top: 10%; display: grid;">
+                    <h1 style="font-size: 60px;font-weight: 700;">My Learning</h1>
+                    <h4 style="font-size: 20px; font-weight: 500;">Track your progress with our <span style="font-weight: 700;">free </span>"My Learning" program.</h4>
+                    <h4 style="font-size: 20px;font-weight: 500;">Log in to your account, and start earning points!</h4>
+                    <img src="	https://www.w3schools.com/myl-green-off.png" alt="">
+                    <div style="margin-top: 5%;">
+                        <a href="#" class="more">Sign Up</a>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="strong">
+            <h1>Become a PRO User</h1>
+            <h3>And unlock powerful features:</h3>
+            <div>
+                <ul >
+                    <li>
+                        <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt="">
+                        <p>Browse W3Schools <strong>without ads</strong></p>
+                    </li>
+                    <li>
+                        <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt="">
+                        <p>Website hosting (Includes <a href="#" class="pro"> Spaces </a>PRO)</p>
+                    </li>
+                    <li>
+                        <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt="">
+                        <p>Access to our <a href="#" class="pro">Html Video Tutorial</a></p>
+                    </li>
+                    
+                </ul>
+            </div>
+            <a href="#" class="more">Learn More</a>
+        </div>
+        <div class="picker">
+            <div class="famouspicker">
+                <h1>Color Picker</h1>
+                <h4 style="margin-top:25px;">W3Schools' famous color picker:</h4>
+                <a href="#" class="famous"><img src="https://www.w3schools.com/images/colorpicker.png" alt=""class="famous"></a>              
+            </div>
+        </div>
+        <div class="game">
+            <div class="codegame">
+                <h1>Code Game</h1>
+                <h4>Help the Lynx collect pine cones!</h4>
+                <a href="#"><img src="https://www.w3schools.com/images/w3lynx_200.png" alt=""></a>
+                <p style="margin-top: 20px;"><a class="play" href="#">Play Game</a></p>
+            </div>
+        </div>
+        <div class="">
+            <div class="quizzes">
+                <h1>Exercises and Quizzes</h1>
+                <h4>Test your skills!</h4>
+                <div class="exercises">
+                    <div class="item2 child15">
+                        <p class="para"><a href="" class="kkk">Exercises</a></p>
+                    </div>
+                    <div class="item3 child52">
+                        <p class="para"><a href=""class="hhh" >Quizzes</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===========================web templates start here================= -->
+        <div class="templates">
+            <h1 style="font-size: 60px;font-weight: 700; font-family:  Source Sans Pro;">Web Templates</h1>
+            <h4 style="font-size: 20px;font-weight: 700;">Browse our selection of free responsive HTML Templ</h4><br>
+            <div>
+                <a href=""><img src="https://www.w3schools.com/w3css_templates.jpg" alt="" class="image"></a>
+            </div>
+            <div style="margin-top: 30px;">
+                <a href="#" class="browser">Browser Templates</a>
+            </div>
+            
+        </div>
+        <div class="kick" style="margin-top:0;padding-bottom:64px;background-color:#282A35;">
+            <div style="max-width:1225px;margin:auto;">
+              <h1>Kickstart your career</h1>
+              <p>Get certified by completing a course</p>
+              <a href="#" class="browser1">Get Started</a>
+            </div>
+        </div>
+        <div  class="image9">
+            <div class="image10">
+                <svg id="w3_cert_arrow_default" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <svg id="w3_cert_badge_default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"></circle><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2" transform="translate(107.13 56.35) rotate(-20.8)">3</text><text class="cls-2" transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)">s</text><text class="cls-2" transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2" transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2" transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2" transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2" transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3" transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3" transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3" transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="translate(171.32 268.24) rotate(-13.06)"> </text><text class="cls-2" transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3" transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3" transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3" transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3" transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3" transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">3</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"></path><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"></path></svg>
+            </div> 
+        </div>
+        <div style="background-color: white;">
+            <div class="section">
+                <h2 style="font-size:60px;font-weight:700;" class="textsmaller">How To Section</h2>
+                <h4 style="font-size: 20px; font-weight: 500;">Code snippets for HTML, CSS and JavaScript</h4>
+                <h6>For example, how to create a slideshow:</h6>
+                <div class="column" style="margin-left: 20%;">
+                    <div class="row">
+                        <div class="load" style="text-align:start; display: flex;justify-content: flex-start;margin-left: -15%;">
+                            <div class="round"></div>
+                            <div class="round1"></div>
+                            <div class="round2"></div>
+                        </div>
+                        <div style="text-align: center; width: 50vw;">
+                            <input type="text"placeholder="www.w3schools.com/tryit/" class="editor">
+                        </div>
+                    </div>
+                    <img src="	https://www.w3schools.com/howto/img_nature_wide.jpg" alt=""style="width:70vw" class="gp">
+                    <div style="text-align: center;margin-left: 7%;">
+                        <div class="load1">
+                            <div class="circle"></div>
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                        </div>
+                    </div>
+                <div style="background-color: white;">
+                    <div class="tee"></div>
+                    <button class="butt2">Learn How To</button>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footerPart">
+            <div class="papa">
+                <div class="spacefooter">
+                    <div class="school">
+                        <a href="# " style="font-size: 2em;font-weight: 700;">W3</a>
+                        <a href="# ">Schools</a>
+                    </div>
+                    <a href=""class="icon">SPACES</a>
+                    <a href="" class="icon">UPGRADE</a>
+                    <a href="" class="icon">AD FREE</a>
+                    <a href="" class="icon">NEWSLETTER</a>
+                    <a href="" class="icon">GET CERTIFIED</a>
+                    <a href=""class="icon">REPORT ERROR</a>
+                </div>
+                <div class="link">
+                    <div class="icon1">
+                        <h4>Top Tutorial</h4><br>
+                        <a href=""class="icon2">HTML Tutorial</a>
+                        <a href=""class="icon2">CSS Tutorial</a>
+                        <a href=""class="icon2">JAVASCRIPT Tutorial</a>
+                        <a href=""class="icon2">How To Tutorial</a>
+                        <a href=""class="icon2">SQL Tutorial</a>
+                        <a href=""class="icon2">PYTHON Tutorial</a>
+                        <a href=""class="icon2">W3.CSS Tutorial</a>
+                        <a href=""class="icon2">BOOTSTRAP Tutorial</a>
+                        <a href=""class="icon2">PHP Tutorial</a>
+                        <a href=""class="icon2">Java Tutorial</a>
+                        <a href=""class="icon2">C++ Tutorial</a>
+                        <a href=""class="icon2">jquery Tutorial</a>
+                    </div>
+                    <div class="icon1">
+                        <h4>Top Reference</h4><br>
+                        <a href=""class="icon2">HTML Reference</a>
+                        <a href=""class="icon2">CSS Reference</a>
+                        <a href=""class="icon2">JAVASCRIPT Reference</a>
+                        <a href=""class="icon2">How To Reference</a>
+                        <a href=""class="icon2">SQL Reference</a>
+                        <a href=""class="icon2">PYTHON Reference</a>
+                        <a href=""class="icon2">W3.CSS Reference</a>
+                        <a href=""class="icon2">BOOTSTRAP Reference</a>
+                        <a href=""class="icon2">PHP Reference</a>
+                        <a href=""class="icon2">Java Reference</a>
+                        <a href=""class="icon2">C++ Reference</a>
+                        <a href=""class="icon2">jquery Reference</a>
+                    </div>
+                    <div class="icon1">
+                        <h4>Top Examples</h4><br>
+                        <a href=""class="icon2">HTML Examples</a>
+                        <a href=""class="icon2">CSS Examples</a>
+                        <a href=""class="icon2">CSS Examples</a>
+                        <a href=""class="icon2">JAVASCRIPT Examples</a>
+                        <a href=""class="icon2">How To Examples</a>
+                        <a href=""class="icon2">SQL Examples</a>
+                        <a href=""class="icon2">PYTHON Examples</a>
+                        <a href=""class="icon2">W3.CSS Examples</a>
+                        <a href=""class="icon2">BOOTSTRAP Examples</a>
+                        <a href=""class="icon2">PHP Examples</a>
+                        <a href=""class="icon2">Java Examples</a>
+                        <a href=""class="icon2">C++ Examples</a>
+                        <a href=""class="icon2">jquery Examples</a>
+                    </div>
+                    <div class="icon1">
+                        <h4>Get Certified</h4><br>
+                        <a href=""class="icon2">HTML Certificate</a>
+                        <a href=""class="icon2">CSS Certificate</a>
+                        <a href=""class="icon2">JAVASCRIPT Certificate</a>
+                        <a href=""class="icon2">How To Certificate</a>
+                        <a href=""class="icon2">SQL Certificate</a>
+                        <a href=""class="icon2">PYTHON Certificate</a>
+                        <a href=""class="icon2">W3.CSS Certificate</a>
+                        <a href=""class="icon2">BOOTSTRAP Certificate</a>
+                        <a href=""class="icon2">PHP Certificate</a>
+                        <a href=""class="icon2">Java Certificate</a>
+                        <a href=""class="icon2">C++ Certificate</a>
+                        <a href=""class="icon2">jquery Certificate</a>
+                    </div>
+                </div>
+                <div class="some">
+                    <a href=""><i class="fa fa-youtube-play" style="font-size:26px;color: white;"></i></a>
+                    <a href=""><i class="fa fa-linkedin-square" style="font-size:24px;color: white;"></i></a>&nbsp;
+                    <a href=""><i class='fab fa-discord' style='font-size:24px;color: white;'></i></a>
+                    <a href=""><i class="fa fa-facebook-square" style="font-size:24px;color: white;"></i></a>&nbsp;
+                    <a href=""><i class="fa fa-instagram" style="font-size:24px;color: white;"></i></a>&nbsp;
+                    <a href="">FORUM</a>&nbsp;
+                    <a href="">ABOUT</a>
+                    
+                </div>   
+                <div class="text">
+                    W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.<br class="footer-hide-special">
+                    Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness<br class="footer-hide-special">
+                    of all content. While using W3Schools, you agree to have read and accepted our <a href="#" class="cookie">terms of use</a>, 
+                    <a href="#" class="cookie">cookie and privacy policy</a>.<br><br>
+                    <a href="#" class="cookie">Copyright 1999-2024</a> by Refsnes Data. All Rights Reserved.
+                    <a href="#" class="cookie">W3Schools is Powered by W3.CSS</a>.<br><br>
+                    <div class="landing">
+                        <img src="https://www.w3schools.com/images/lynx_landing.png" alt="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
